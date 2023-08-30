@@ -21,4 +21,9 @@ public class RomanNumeralTest {
         RomanNumeral romanNumeral = new RomanNumeral();
         assertEquals("III",romanNumeral.convertDecimalNumberToRomanNumeral(3));
     }
+    @Test
+    public void convertDecimalFourToRomanNumeral(){
+        RomanNumeral romanNumeral = new RomanNumeral();
+        assertEquals("IV",romanNumeral.convertDecimalNumberToRomanNumeral(4));
+    }
 }
