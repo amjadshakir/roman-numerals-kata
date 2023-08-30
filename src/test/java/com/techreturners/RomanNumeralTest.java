@@ -1,39 +1,39 @@
 package com.techreturners;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class RomanNumeralTest {
+    private  RomanNumeral romanNumeral;
+    @BeforeEach
+    public void setup(){
+        romanNumeral = new RomanNumeral();
+    }
 
     @Test
     public void convertDecimalOneToRomanNumeral(){
-        RomanNumeral romanNumeral = new RomanNumeral();
         assertEquals("I",romanNumeral.convertDecimalNumberToRomanNumeral(1));
     }
     @Test
     public void convertDecimalTwoToRomanNumeral(){
-        RomanNumeral romanNumeral = new RomanNumeral();
         assertEquals("II",romanNumeral.convertDecimalNumberToRomanNumeral(2));
     }
     @Test
     public void convertDecimalThreeToRomanNumeral(){
-        RomanNumeral romanNumeral = new RomanNumeral();
         assertEquals("III",romanNumeral.convertDecimalNumberToRomanNumeral(3));
     }
     @Test
     public void convertDecimalFourToRomanNumeral(){
-        RomanNumeral romanNumeral = new RomanNumeral();
         assertEquals("IV",romanNumeral.convertDecimalNumberToRomanNumeral(4));
     }
     @Test
     public void convertDecimalFiveToRomanNumeral(){
-        RomanNumeral romanNumeral = new RomanNumeral();
         assertEquals("V",romanNumeral.convertDecimalNumberToRomanNumeral(5));
     }
     @Test
     public void testSixToEighteen(){
-        RomanNumeral romanNumeral = new RomanNumeral();
         assertEquals("VI",romanNumeral.convertDecimalNumberToRomanNumeral(6));
         assertEquals("IX",romanNumeral.convertDecimalNumberToRomanNumeral(9));
         assertEquals("X",romanNumeral.convertDecimalNumberToRomanNumeral(10));
