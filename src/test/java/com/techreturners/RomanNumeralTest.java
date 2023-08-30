@@ -26,4 +26,9 @@ public class RomanNumeralTest {
         RomanNumeral romanNumeral = new RomanNumeral();
         assertEquals("IV",romanNumeral.convertDecimalNumberToRomanNumeral(4));
     }
+    @Test
+    public void convertDecimalFiveToRomanNumeral(){
+        RomanNumeral romanNumeral = new RomanNumeral();
+        assertEquals("V",romanNumeral.convertDecimalNumberToRomanNumeral(5));
+    }
 }
