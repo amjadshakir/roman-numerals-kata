@@ -3,14 +3,12 @@ package com.techreturners;
 public class RomanNumeral {
 
     public String convertDecimalNumberToRomanNumeral(int decimalNumber) {
-        if (decimalNumber == 3) {
-            return "III";
-
-        }
-        if (decimalNumber == 2) {
-            return "II";
-        }
-    return "I";
+       StringBuilder romanNumeral = new StringBuilder();
+       while (decimalNumber >=1){
+           romanNumeral.append("I");
+           decimalNumber = decimalNumber - 1;
+       }
+       return romanNumeral.toString();
     }
 
 
