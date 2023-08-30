@@ -31,4 +31,22 @@ public class RomanNumeralTest {
         RomanNumeral romanNumeral = new RomanNumeral();
         assertEquals("V",romanNumeral.convertDecimalNumberToRomanNumeral(5));
     }
+    @Test
+    public void testSixToEighteen(){
+        RomanNumeral romanNumeral = new RomanNumeral();
+        assertEquals("VI",romanNumeral.convertDecimalNumberToRomanNumeral(6));
+        assertEquals("IX",romanNumeral.convertDecimalNumberToRomanNumeral(9));
+        assertEquals("X",romanNumeral.convertDecimalNumberToRomanNumeral(10));
+        assertEquals("XLV",romanNumeral.convertDecimalNumberToRomanNumeral(45));
+        assertEquals("LVI",romanNumeral.convertDecimalNumberToRomanNumeral(56));
+        assertEquals("XCII",romanNumeral.convertDecimalNumberToRomanNumeral(92));
+        assertEquals("CXCVII",romanNumeral.convertDecimalNumberToRomanNumeral(197));
+        assertEquals("CDLXII",romanNumeral.convertDecimalNumberToRomanNumeral(462));
+        assertEquals("DLXXXIII",romanNumeral.convertDecimalNumberToRomanNumeral(583));
+        assertEquals("CMXXXV",romanNumeral.convertDecimalNumberToRomanNumeral(935));
+        assertEquals("MLVI",romanNumeral.convertDecimalNumberToRomanNumeral(1056));
+        assertEquals("MDXCII",romanNumeral.convertDecimalNumberToRomanNumeral(1592));
+        assertEquals("MMMCXCVII",romanNumeral.convertDecimalNumberToRomanNumeral(3197));
+
+    }
 }
