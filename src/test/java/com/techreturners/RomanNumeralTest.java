@@ -16,4 +16,9 @@ public class RomanNumeralTest {
         RomanNumeral romanNumeral = new RomanNumeral();
         assertEquals("II",romanNumeral.convertDecimalNumberToRomanNumeral(2));
     }
+    @Test
+    public void convertDecimalThreeToRomanNumeral(){
+        RomanNumeral romanNumeral = new RomanNumeral();
+        assertEquals("III",romanNumeral.convertDecimalNumberToRomanNumeral(3));
+    }
 }
