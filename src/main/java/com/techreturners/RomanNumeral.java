@@ -4,8 +4,9 @@ public class RomanNumeral {
 
     public String convertDecimalNumberToRomanNumeral(int decimalNumber) {
        StringBuilder romanNumeral = new StringBuilder();
-        if (decimalNumber == 4) {
-            return "IV";
+        while (decimalNumber >=4){
+            romanNumeral.append("IV");
+            decimalNumber = decimalNumber - 4;
         }
        while (decimalNumber >=1){
            romanNumeral.append("I");
