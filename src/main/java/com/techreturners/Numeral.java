@@ -15,8 +15,8 @@ public enum Numeral {
     FOUR(4,"IV"),
     ONE(1,"I");
 
-    private int decimalNumber;
-    private String romanNumeral;
+    private final int decimalNumber;
+    private final String romanNumeral;
 
     Numeral(int decimalNumber, String romanNumeral){
         this.decimalNumber = decimalNumber;
